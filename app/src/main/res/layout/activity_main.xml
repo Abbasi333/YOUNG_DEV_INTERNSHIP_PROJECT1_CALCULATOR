@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ic_launcher_foreground">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR:"
+        android:textSize="50dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edittextnum1"
+        android:layout_width="399dp"
+        android:layout_height="81dp"
+        android:hint="Enter a num1"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edittextnum2"
+        android:layout_width="399dp"
+        android:layout_height="81dp"
+        android:hint="Enter a num2"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/divsionbtn"
+            android:layout_width="396dp"
+            android:layout_height="67dp"
+            android:onClick="Divide"
+            android:text="DIVISION" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/multiplybtn"
+            android:layout_width="396dp"
+            android:layout_height="67dp"
+            android:onClick="Multiply"
+            android:text="MULTIPLY" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/additionbtn"
+            android:layout_width="396dp"
+            android:layout_height="match_parent"
+            android:onClick="Add"
+            android:text="ADDITION" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/subtractbtn"
+            android:layout_width="396dp"
+            android:layout_height="67dp"
+            android:onClick="Subtract"
+            android:text="SUBTRACTION" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/answertext"
+        android:layout_width="300dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
